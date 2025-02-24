@@ -1,3 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">AgendaPeluda</string>
+    <string name="app_name">Agenda Peluda</string>
+    <string name="titulo_agenda">AGENDA PELUDA</string>
+    <string name="boton_comenzar">COMENZAR</string>
+    <string name="logo_descripcion">Logo de la aplicación</string>
 </resources>
