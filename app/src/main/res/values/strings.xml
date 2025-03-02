@@ -5,4 +5,14 @@
     <string name="boton_comenzar">COMENZAR</string>
     <string name="logo_descripcion">Logo de la aplicación</string>
     <string name="User">User</string>
+
+    <string name="nombre_mascota">Nombre de la mascota</string>
+    <string name="tipo_mascota">Tipo de mascota</string>
+    <string name="edad_mascota">Edad (en años)</string>
+    <string name="genero_mascota">Género de la mascota</string>
+    <string name="macho">Macho</string>
+    <string name="hembra">Hembra</string>
+    <string name="guardar_mascota">Guardar Mascota</string>
+    <string name="mas_tarde">Más tarde</string>
+    <string name="huellita_desc">Icono de huella</string>
 </resources>

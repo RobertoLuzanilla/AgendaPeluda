@@ -1,0 +1,84 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@color/Color_principal"
+    tools:context=".RegisterMascota">
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_gravity="center"
+        android:src="@drawable/huellita"
+        android:contentDescription="@string/huellita_desc"/>
+
+    <EditText
+        android:id="@+id/nombre_mascota"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/nombre_mascota"
+        android:minHeight="48dp"
+        android:paddingVertical="12dp"
+        android:layout_margin="15dp"
+        android:layout_marginBottom="16dp"/>
+
+    <Spinner
+        android:id="@+id/tipo_mascota"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="48dp"
+        android:paddingVertical="12dp"
+        android:layout_marginBottom="16dp"/>
+
+    <EditText
+        android:id="@+id/edad_mascota"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/edad_mascota"
+        android:inputType="number"
+        android:minHeight="48dp"
+        android:paddingVertical="12dp"
+        android:layout_marginBottom="16dp"/>
+
+    <RadioGroup
+        android:id="@+id/genero_mascota"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="16dp">
+        <RadioButton
+            android:id="@+id/macho"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/macho"/>
+
+        <RadioButton
+            android:id="@+id/hembra"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/hembra"/>
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/guardar_mascota"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/Color_Botton"
+        android:text="@string/guardar_mascota"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp"/>
+
+    <Button
+        android:id="@+id/btn_mas_tarde"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:backgroundTint="@android:color/darker_gray"
+        android:layout_marginTop="15dp"
+
+        android:text="@string/mas_tarde" />
+
+</LinearLayout>
