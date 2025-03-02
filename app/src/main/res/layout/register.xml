@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/register"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/Color_principal"
+    android:padding="16dp"
+    tools:context=".RegisterActivity">
+
+    <ImageView
+        android:layout_width="241dp"
+        android:layout_height="241dp"
+        android:layout_gravity="center"
+        android:src="@drawable/User"
+        android:contentDescription="@string/User"/>
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Registro de Usuario"
+        android:textSize="24sp"
+        android:textColor="@color/black"
+        android:layout_gravity="center"
+        android:layout_marginBottom="24dp"/>
+
+    <EditText
+        android:id="@+id/username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nombre de usuario"
+        android:inputType="text"
+        android:layout_marginBottom="16dp"/>
+
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Correo electrónico"
+        android:inputType="textEmailAddress"
+        android:layout_marginBottom="16dp"/>
+
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Contraseña"
+        android:inputType="textPassword"
+        android:layout_marginBottom="16dp"/>
+
+    <EditText
+        android:id="@+id/confirm_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Confirmar contraseña"
+        android:inputType="textPassword"
+        android:layout_marginBottom="16dp"/>
+
+    <Button
+        android:id="@+id/register_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Registrar"
+        android:backgroundTint="@color/Color_Botton"
+        android:textColor="@android:color/white"/>
+
+</LinearLayout>

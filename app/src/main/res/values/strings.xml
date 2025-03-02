@@ -4,4 +4,5 @@
     <string name="titulo_agenda">AGENDA PELUDA</string>
     <string name="boton_comenzar">COMENZAR</string>
     <string name="logo_descripcion">Logo de la aplicación</string>
+    <string name="User">User</string>
 </resources>
