@@ -4,71 +4,102 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
     android:background="@color/Color_principal"
+    android:orientation="vertical"
     android:padding="16dp"
-    tools:context=".RegisterActivity">
+    tools:context=".activity_add_event">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
         android:gravity="center_vertical"
+        android:orientation="horizontal"
         android:paddingVertical="8dp">
 
         <Button
-            android:id="@+id/cancelButton"
+            android:id="@+id/btnCancelEvent"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:fontFamily="@font/quicksand_bold"
             android:text="Cancelar"
-            android:textColor="@color/Color_Botton"
-            android:background="@android:color/transparent"/>
+            android:textColor="@color/Color_Botton" />
 
         <TextView
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="Nueva Actividad"
-            android:textSize="24sp"
-            android:textStyle="bold"
+            android:fontFamily="@font/quicksand_bold"
             android:gravity="center"
-            android:textColor="@android:color/black"/>
+            android:text="Nueva actividad"
+            android:textColor="@android:color/black"
+            android:textSize="24sp"
+            android:textStyle="bold" />
 
         <Button
-            android:id="@+id/addButton"
+            android:id="@+id/btnAddEvent"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Agregar"
-            android:textColor="@color/Color_Botton"
             android:background="@android:color/transparent"
-            android:enabled="false"/>
+            android:enabled="true"
+            android:fontFamily="@font/quicksand_bold"
+            android:text="Agregar"
+            android:textColor="@color/Color_Botton" />
     </LinearLayout>
 
     <EditText
         android:id="@+id/tituloActividad"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Título"
+        android:layout_marginBottom="16dp"
         android:background="@android:drawable/editbox_background"
+        android:fontFamily="@font/quicksand_regular"
+        android:hint="Título"
+        android:inputType="text"
         android:padding="12dp"
         android:textColor="@android:color/black"
-        android:textSize="16sp"
-        android:layout_marginBottom="16dp"
-        android:inputType="text"/>
+        android:textSize="16sp" />
 
-    <!-- Tipo de actividad -->
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Tipo de actividad"
-        android:textSize="16sp"
-        android:textStyle="bold"
         android:layout_marginTop="8dp"
-        android:textColor="@android:color/black"/>
+        android:fontFamily="@font/quicksand_bold"
+        android:text="Mascota"
+        android:textColor="@android:color/black"
+        android:textSize="16sp"
+        android:textStyle="bold" />
 
     <com.google.android.material.textfield.TextInputLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:fontFamily="@font/quicksand_regular"
+        android:hint="Selecciona una mascota"
+        app:boxStrokeColor="@android:color/white">
+
+        <AutoCompleteTextView
+            android:id="@+id/dropdownMascota"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/quicksand_regular"
+            android:inputType="none"
+            android:textColor="@android:color/black" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/quicksand_bold"
+        android:text="Tipo de actividad"
+        android:textColor="@android:color/black"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/quicksand_regular"
         android:hint="Selecciona una actividad"
         app:boxStrokeColor="@android:color/white">
 
@@ -76,106 +107,115 @@
             android:id="@+id/dropdownTipoActividad"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textColor="@android:color/black"
-            android:inputType="none"/>
+            android:fontFamily="@font/quicksand_regular"
+            android:inputType="none"
+            android:textColor="@android:color/black" />
     </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- Sección "Empieza" movida más arriba -->
 
     <EditText
         android:id="@+id/notas"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="Notas"
+        android:layout_height="99dp"
+        android:layout_marginBottom="16dp"
         android:background="@android:drawable/editbox_background"
-        android:minHeight="120dp"
+        android:fontFamily="@font/quicksand_regular"
         android:gravity="top"
+        android:hint="Notas"
+        android:inputType="textMultiLine"
+        android:lines="3"
+        android:minHeight="120dp"
         android:padding="12dp"
         android:textColor="@android:color/black"
-        android:textSize="16sp"
-        android:layout_marginBottom="16dp"
-        android:inputType="textMultiLine"
-        android:lines="3"/>
+        android:textSize="16sp" />
 
-    <!-- Empieza -->
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/quicksand_bold"
         android:text="Empieza"
-        android:textSize="16sp"
         android:textColor="@android:color/black"
-        android:textStyle="bold"
-        android:layout_marginTop="16dp"/>
+        android:textSize="16sp"
+        android:textStyle="bold" />
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:layout_marginTop="8dp">
+        android:layout_marginTop="8dp"
+        android:orientation="horizontal">
 
         <Button
             android:id="@+id/startDateButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:backgroundTint="@color/Color_Botton"
+            android:fontFamily="@font/quicksand_bold"
             android:text="Día actual"
-            android:textColor="@android:color/white"
-            android:backgroundTint="@color/Color_Botton"/>
+            android:textColor="@android:color/white" />
 
         <Button
             android:id="@+id/startTimeButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Hora actual"
-            android:textColor="@android:color/white"
+            android:layout_marginStart="16dp"
             android:backgroundTint="@color/Color_Botton"
-            android:layout_marginStart="16dp"/>
+            android:fontFamily="@font/quicksand_bold"
+            android:text="Hora actual"
+            android:textColor="@android:color/white" />
     </LinearLayout>
 
-    <!-- Sección "Termina" -->
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/quicksand_bold"
         android:text="Termina"
-        android:textSize="16sp"
         android:textColor="@android:color/black"
-        android:textStyle="bold"
-        android:layout_marginTop="16dp"/>
+        android:textSize="16sp"
+        android:textStyle="bold" />
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:layout_marginTop="8dp">
+        android:layout_marginTop="8dp"
+        android:orientation="horizontal">
 
         <Button
             android:id="@+id/endDateButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:backgroundTint="@color/Color_Botton"
+            android:fontFamily="@font/quicksand_bold"
             android:text="Seleccionar fecha"
-            android:textColor="@android:color/white"
-            android:backgroundTint="@color/Color_Botton"/>
+            android:textColor="@android:color/white" />
 
         <Button
             android:id="@+id/endTimeButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Seleccionar hora"
-            android:textColor="@android:color/white"
+            android:layout_marginStart="16dp"
             android:backgroundTint="@color/Color_Botton"
-            android:layout_marginStart="16dp"/>
+            android:fontFamily="@font/quicksand_bold"
+            android:text="Seleccionar hora"
+            android:textColor="@android:color/white" />
     </LinearLayout>
 
-    <!-- Repetir actividad -->
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/quicksand_bold"
         android:text="Repetir"
-        android:textSize="16sp"
         android:textColor="@android:color/black"
-        android:textStyle="bold"
-        android:layout_marginTop="16dp"/>
+        android:textSize="16sp"
+        android:textStyle="bold" />
 
     <com.google.android.material.textfield.TextInputLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:fontFamily="@font/quicksand_regular"
         android:hint="Selecciona una opción"
         app:boxStrokeColor="@android:color/white">
 
@@ -183,8 +223,19 @@
             android:id="@+id/dropdownRepeatOption"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textColor="@android:color/black"
-            android:inputType="none"/>
+            android:fontFamily="@font/quicksand_regular"
+            android:inputType="none"
+            android:textColor="@android:color/black" />
     </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/btnNuevaMascota"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40px"
+        android:backgroundTint="@color/Color_Botton"
+        android:fontFamily="@font/quicksand_bold"
+        android:text="Añadir nueva mascota"
+        android:textColor="@android:color/white" />
 
 </LinearLayout>

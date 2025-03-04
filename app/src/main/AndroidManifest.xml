@@ -12,6 +12,16 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AgendaPeluda"
         tools:targetApi="31">
+        <activity android:name=".login" />
+        <activity android:name=".RegisterActivity" />
+        <activity android:name=".activity_add_event" />
+        <activity android:name=".RegisterMascota" />
+        <activity
+            android:name=".CalendarItem"
+            android:exported="false" />
+        <activity
+            android:name=".CalendarActivity"
+            android:exported="false" />
         <activity
             android:name=".MainActivity"
             android:exported="true">

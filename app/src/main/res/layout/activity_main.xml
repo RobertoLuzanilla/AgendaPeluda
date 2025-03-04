@@ -3,10 +3,10 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
-    android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/Color_principal"
+    android:orientation="vertical"
     tools:context=".MainActivity">
 
     <TextView
@@ -15,29 +15,39 @@
         android:layout_height="222dp"
         android:layout_gravity="center"
         android:layout_marginTop="70dp"
-        android:fontFamily="@font/im_fell_english"
+        android:fontFamily="@font/quicksand_bold"
         android:gravity="center"
         android:text="@string/titulo_agenda"
         android:textColor="@android:color/black"
         android:textSize="64sp" />
 
+    <TextView
+        android:id="@+id/slogan_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/quicksand_bold"
+        android:text="¡Ponte al día con tus mascotas!"
+        android:textColor="@color/Color_Botton"
+        android:textSize="18sp" />
+
     <ImageView
         android:layout_width="241dp"
         android:layout_height="241dp"
         android:layout_gravity="center"
-        android:src="@drawable/logo"
-        android:contentDescription="@string/logo_descripcion"/>
-
+        android:contentDescription="@string/logo_descripcion"
+        android:src="@drawable/logo" />
 
     <Button
-        android:id="@+id/button_Iniciar"
+        android:id="@+id/btnComenzar"
         android:layout_width="343dp"
         android:layout_height="52dp"
         android:layout_gravity="center"
         android:layout_marginTop="16dp"
         android:backgroundTint="@color/Color_Botton"
+        android:fontFamily="@font/quicksand_bold"
         android:text="@string/boton_comenzar"
-        android:textColor="@color/white"/>
-
+        android:textColor="@color/white" />
 
 </LinearLayout>

@@ -3,54 +3,73 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/login"
-    android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/Color_principal"
+    android:orientation="vertical"
     android:padding="16dp"
-    tools:context=".MainActivity">
-
+    tools:context=".login">
 
     <ImageView
         android:layout_width="241dp"
         android:layout_height="241dp"
         android:layout_gravity="center"
-        android:src="@drawable/logo"
-        android:contentDescription="@string/logo_descripcion"/>
+        android:contentDescription="@string/logo_descripcion"
+        android:src="@drawable/logo" />
 
     <TextView
         android:id="@+id/title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Inicio de sesión"
-        android:fontFamily="@font/im_fell_english"
-        android:textSize="24sp"
-        android:textColor="@color/black"
         android:layout_gravity="center"
-        android:layout_marginBottom="24dp"/>
+        android:layout_marginBottom="24dp"
+        android:fontFamily="@font/quicksand_bold"
+        android:text="Inicio de sesión"
+        android:textColor="@color/black"
+        android:textSize="24sp" />
 
     <EditText
         android:id="@+id/username"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:background="@android:drawable/editbox_background"
+        android:fontFamily="@font/quicksand_regular"
         android:hint="Nombre de usuario"
         android:inputType="text"
-        android:layout_marginBottom="16dp"/>
+        android:padding="12dp"
+        android:textColor="@android:color/black"
+        android:textSize="16sp" />
 
     <EditText
         android:id="@+id/password"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginBottom="16dp"
+        android:background="@android:drawable/editbox_background"
+        android:fontFamily="@font/quicksand_regular"
         android:hint="Contraseña"
-        android:inputType="textPassword" />
+        android:inputType="textPassword"
+        android:padding="12dp"
+        android:textColor="@android:color/black"
+        android:textSize="16sp" />
 
     <Button
-        android:id="@+id/login_button"
+        android:id="@+id/btnLogin"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:backgroundTint="@color/Color_Botton"
-        android:text="Iniciar Sesión"
+        android:fontFamily="@font/quicksand_bold"
+        android:text="Iniciar sesión"
+        android:textColor="@android:color/white" />
+
+    <Button
+        android:id="@+id/btnRegister"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@android:color/darker_gray"
+        android:fontFamily="@font/quicksand_bold"
+        android:text="Registrarse"
         android:textColor="@android:color/white" />
 
 </LinearLayout>
